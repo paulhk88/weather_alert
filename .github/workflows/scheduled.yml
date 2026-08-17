@@ -42,6 +42,6 @@ jobs:
           # Your secrets are available as environment variables
           # Add more secrets in Settings > Secrets > Actions
           ACCT_SID: ${{ secrets.ACCT_SID }}
-          AUTH_TOKEN: ${{ secrets.AUT_TOKEN }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
         run: python main.py
