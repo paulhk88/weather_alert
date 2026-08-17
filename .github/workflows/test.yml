@@ -23,8 +23,8 @@ jobs:
 
       - name: Check secrets are configured
         env:
-          MY_EMAIL: ${{ secrets.MY_EMAIL }}
-          MY_PASSWORD: ${{ secrets.MY_PASSWORD }}
+          ACCT_SID: ${{ secrets.ACCT_SID }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: |
           if [ -z "$ACCT_SID" ]; then
             echo "ACCT_SID secret is not set!"
